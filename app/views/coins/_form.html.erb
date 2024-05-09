@@ -15,20 +15,25 @@
     <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
   </div>
-
+  <br>
   <div>
     <%= form.label :acronym, style: "display: block" %>
     <%= form.text_field :acronym %>
   </div>
-
+  <br>
   <div>
     <%= form.label :url_image, style: "display: block" %>
     <%= form.text_field :url_image %>
     <% if coin.url_image.present? %>
-      <%= image_tag coin.url_image, size: "25x25" %>
+      <%= image_tag coin.url_image, size: "20x20" %>
     <% end %>
   </div>
-
+  <br>
+  <div>
+    <%= form.label :minning_type, style: "display: block" %>
+    <%= form.select("minning_type_id", @minning_type_option, {include_blank: "Selecione..."}) %>
+  </div>
+  <br>
   <div>
     <%= form.submit %>
   </div>

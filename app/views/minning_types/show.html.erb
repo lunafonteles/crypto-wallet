@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @minning_type %>
+
+<div>
+  <%= link_to "Editar", edit_minning_type_path(@minning_type) %> |
+  <%= link_to "Voltar", minning_types_path %>
+
+  <%= button_to "Apagar", @minning_type, method: :delete %>
+</div>

@@ -1,0 +1,23 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tipos de mineração</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Sigla</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @minning_types.each do |minning_type| %>
+      <tr>
+        <td><%= minning_type.description %></td>
+        <td><%= minning_type.acronym %></td>
+        <td><%= link_to "Mostrar", minning_type %></td>
+      </tr>
+    <% end %>
+
+    <%= link_to "Adicionar novo tipo de mineração", new_minning_type_path %>
+  </tbody>
+</table>
