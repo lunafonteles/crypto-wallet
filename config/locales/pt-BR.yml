@@ -1,3 +1,47 @@
 pt-BR:
   hello: "Olá mundo"
   welcome: "Seja bem vindo"
+  actual_locale: "Português-BR"
+  coins_register: "Cadastro de Moedas"
+  mining_types_register: "Cadastro de Tipos de Mineração"
+  dev: "Desenvolvimento"
+  prod: "Produção"
+  test: "Teste"
+  your_environment: "Você está no ambiente de"
+  language_in_use: "O idioma usado é"
+  show: "Mostrar"
+  back: "Voltar"
+  delete: "Deletar"
+  edit: "Editar"
+  confirm: "Tem certeza?"
+  add_new: "Adicionar novo(a)"
+  new_mining_type: "Novo tipo de mineração"
+  mining_types: "Tipos de mineração"
+  editing_minimg_type: "Editando tipo de mineração"
+  editing_coin: "Editando moeda"
+  coins: "Moedas"
+
+  activeRecord:
+    models:
+      coin: 
+        one: Moeda
+        others: Moedas
+      minning_type: 
+        one: Tipo de mineração
+        others: Tipos de mineração
+    attributes:
+      coin:
+        id: Código
+        description: Descrição
+        acronym: Sigla
+        url_image: URL da Imagem
+        minning_type: Tipo de Mineração
+        minning_type_id: Código do Tipo de Mineração
+        updated_at: Atualizado em
+        created_at: Criado em
+      minning_type:
+        id: Código
+        description: Descrição
+        acronym: Sigla
+        updated_at: Atualizado em
+        created_at: Criado em

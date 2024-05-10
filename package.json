@@ -1,0 +1,13 @@
+{
+  "name": "Luna",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lunafonteles/crypto-wallet.git",
+  "author": "lunafonteles <lunafonteles@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "notify-js-legacy": "^0.4.1"
+  }
+}

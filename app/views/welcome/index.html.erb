@@ -1,7 +1,16 @@
-<h1>Seja Bem vindo <%= @name %> </h1>
-<p> <strong>Data:</strong> <%= data_br(Date.today) %></p>
+<% if @my_name.present? %>
+  <h1> <%= t('welcome') + " " + @my_name %> </h1>
+<% else %>
+  <h1> <%= t('welcome') %> </h1>
+<% end %>
+
+<p> <%= link_to 'Português', '/?locale=pt-BR' %></p>
+<p> <%= link_to 'English', root_path(locale: 'en') %></p>
+
+<p> <strong>Data:</strong> <%= l(Date.today) %></p>
+<p> <strong><%= t('language_in_use')%> </strong><%= I18n.t('actual_locale') %></p>
+<p> <strong><%= t('your_environment') + ": " %></strong> <%= ambiente_rails %></p>
+
 <ul>
     <%= render "menu" %>
-    <p>Você está no ambiente de <%= ambiente_rails %></p>
-
 </ul>

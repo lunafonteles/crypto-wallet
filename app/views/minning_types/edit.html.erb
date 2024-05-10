@@ -1,10 +1,10 @@
-<h1>Editing minning type</h1>
+<h1><%= link_to t('editing_minimg_type'), @minning_type %></h1>
 
 <%= render "form", minning_type: @minning_type %>
 
 <br>
 
 <div>
-  <%= link_to "Mostrar", @minning_type %> |
-  <%= link_to "Voltar", minning_types_path %>
+  <%= link_to t('show'), @minning_type %> |
+  <%= link_to t('back'), minning_types_path %>
 </div>

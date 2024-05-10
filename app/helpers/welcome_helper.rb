@@ -1,11 +1,11 @@
 module WelcomeHelper
     def ambiente_rails
         if Rails.env.development?
-            "Desenvolvimento"
+            t('dev')
         elsif Rails.env.production?
-            "Produção"
+            t('prod')
         else 
-            "Teste"
+            t('test')
         end
     end
 end
