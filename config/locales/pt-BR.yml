@@ -13,13 +13,17 @@ pt-BR:
   back: "Voltar"
   delete: "Deletar"
   edit: "Editar"
+  select: "Selecionar"
   confirm: "Tem certeza?"
-  add_new: "Adicionar novo(a)"
+  add: "Adicionar"
   new_mining_type: "Novo tipo de mineração"
   mining_types: "Tipos de mineração"
   editing_minimg_type: "Editando tipo de mineração"
+  new_coin: "Nova moeda"
   editing_coin: "Editando moeda"
   coins: "Moedas"
+  app_description: "Este é o Crypto Wallet, um app para você cadastrar e acompanhar suas cripto moedas"
+  menu_msg: "Selecione uma das opções abaixo"
 
   activeRecord:
     models:

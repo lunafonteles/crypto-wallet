@@ -44,11 +44,16 @@ en:
   back: "Back"
   delete: "Delete"
   edit: "Edit"
+  select: "Select"
   confirm: "Are you sure?"
-  add_new: "Add new"
+  add: "Add"
   new_mining_type: "New mining type"
   mining_types: "Mining types"
   editing_minimg_type: "Editing mining type"
+  new_coin: "New coin"
   editing_coin: "Editing coin"
   coins: "Coins"
+  app_description: "This is Crypto Wallet, an app for you to register your crypto coins"
+  menu_msg: "To start, choose an option below"
+
 

@@ -2,7 +2,7 @@
 
 <h1><%= t('mining_types') %></h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th><%= @minning_types.human_attribute_name(:description)%></th>
@@ -17,7 +17,7 @@
         <td><%= link_to t('show'), minning_type %></td>
       </tr>
     <% end %>
-
-    <%= link_to t('add_new'), new_minning_type_path %>
   </tbody>
 </table>
+
+<%= link_to t('add'), new_minning_type_path, class: "btn btn-primary" %>

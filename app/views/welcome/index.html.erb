@@ -1,16 +1,22 @@
-<% if @my_name.present? %>
-  <h1> <%= t('welcome') + " " + @my_name %> </h1>
-<% else %>
-  <h1> <%= t('welcome') %> </h1>
-<% end %>
-
-<p> <%= link_to 'Português', '/?locale=pt-BR' %></p>
-<p> <%= link_to 'English', root_path(locale: 'en') %></p>
+<div class="jumbotron">
+  <h1 class="display-4">
+    <% if @my_name.present? %>
+      <div> <%= t('welcome') + " " + @my_name %> </div>
+    <% else %>
+      <div> <%= t('welcome') %> </div>
+    <% end %>
+  </h1>
+  <p class="lead"><%= t('app_description')%></p>
+  <hr class="my-4">
+  <p><%= t('menu_msg')%>:</p>
+  <p class="lead">
+    <ul>
+        <%= render "menu" %>
+    </ul>
+  </p>
+</div>
 
 <p> <strong>Data:</strong> <%= l(Date.today) %></p>
 <p> <strong><%= t('language_in_use')%> </strong><%= I18n.t('actual_locale') %></p>
 <p> <strong><%= t('your_environment') + ": " %></strong> <%= ambiente_rails %></p>
 
-<ul>
-    <%= render "menu" %>
-</ul>

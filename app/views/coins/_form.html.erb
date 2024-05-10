@@ -11,30 +11,30 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+  <div class="form-group">
+    <%= form.label :description, style:"display: block" %>
+    <%= form.text_field :description, class:"form-control"%>
   </div>
   <br>
-  <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
+  <div class="form-group">
+    <%= form.label :acronym, style:"display: block" %>
+    <%= form.text_field :acronym, class:"form-control" %>
   </div>
   <br>
-  <div>
-    <%= form.label :url_image, style: "display: block" %>
-    <%= form.text_field :url_image %>
+  <div class="form-group">
+    <%= form.label :url_image, style:"display: block" %>
+    <%= form.text_field :url_image, class:"form-control" %>
     <% if coin.url_image.present? %>
       <%= image_tag coin.url_image, size: "20x20" %>
     <% end %>
   </div>
   <br>
-  <div>
-    <%= form.label :minning_type, style: "display: block" %>
-    <%= form.select("minning_type_id", @minning_type_option, {include_blank: "Selecione..."}) %>
+  <div class="form-group">
+    <%= form.label :minning_type, style:"display: block" %>
+    <%= form.select("minning_type_id", @minning_type_option, {include_blank: t("select")}, class:"form-control") %>
   </div>
   <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit nil, class: "btn btn-primary"%>
   </div>
 <% end %>

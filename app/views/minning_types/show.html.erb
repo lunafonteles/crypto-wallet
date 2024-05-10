@@ -1,10 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @minning_type %>
+<form>
+  <div class="form-group">
+    <%= label_tag nil, @minning_type.class.human_attribute_name(:description) %>
+    <%= text_field_tag nil, @minning_type.description, class:"form-control", disabled:"true" %>
+  </div>
+  <br>
+  <div class="form-group">
+    <%= label_tag nil, @minning_type.class.human_attribute_name(:acronym) %>
+    <%= text_field_tag nil, @minning_type.acronym, class:"form-control", disabled:"true" %>
+  </div>
+</form>
+
+<br>
 
 <div>
-  <%= link_to t('edit'), edit_minning_type_path(@minning_type) %> |
-  <%= link_to t('back'), minning_types_path %>
+  <%= link_to t('edit'), edit_minning_type_path(@minning_type), class:"btn btn-primary" %> 
+  <%= link_to t('back'), minning_types_path, class:"btn btn-primary" %>
 
   <%= button_to t('delete'), @minning_type, method: :delete %>
 </div>
